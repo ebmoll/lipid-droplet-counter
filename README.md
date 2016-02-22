@@ -1,4 +1,4 @@
-====== Lipid Droplet Counter ======
+# Lipid Droplet Counter
 
 **Finds and counts white spots in a stack and measures volume and area of them** 
 
@@ -16,7 +16,7 @@ Copy the file {{:plugin:analysis:droplet_counter:droplet_finder.jar|Droplet_Coun
 **Author:** Samuel Moll (samimoll@googlemail.com)
 
 
-===== How to use the droplet counter plugins =====
+## How to use the droplet counter plugins
 
 write bug reports, feature requests and questions to:
 samimoll@googlemail.com
@@ -79,7 +79,7 @@ particles are green. If there is a green line through one of your particles, low
 "connect threshold".
 
 
-===== FAQ =====
+# FAQ
 
   * **Q:** What are the units used for the measured volume and surface area?
   * **A:** The units are pixels cubed (=voxels) and pixels squared respectively. The surface area is estimated based on the assumption that your voxels have the same height, width and length. If this is not the case (Z/X aspect ratio != 1), the estimated surface area is wrong.
