@@ -108,7 +108,7 @@ public class DF_Segment_Analyzer implements PlugIn, DialogListener {
     	}
     	/*preview_image.getCanvas().setDisplayList(network.getParticleMarkers(sn-1),Color.red,new BasicStroke(1));
     	preview_image.repaintWindow();*/
-    	network.drawParticleMarkers(preview_image.getOverlay(),sn-1);
+    	network.drawParticleMarkers(preview_image.getImageOverlay(),sn-1);
     	previewrunning = false;
     	return true;
     }
