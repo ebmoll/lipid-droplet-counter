@@ -13,34 +13,40 @@
 		<relativePath />
 	</parent>
 
-	<groupId>sc.fiji</groupId>
+	<groupId>ebmoll.lipid_droplet_counter</groupId>
 	<artifactId>Droplet_Counter</artifactId>
-	<version>0.1.0</version>
+	<version>1.0.0</version>
 
 	<name>plugins/Droplet_Counter.jar</name>
 	<description>A Maven project implementing an ImageJ 1.x plugin</description>
 
 	<developers>
 		<developer>
-			<id>dscho</id>
-			<name>Johannes Schindelin</name>
-			<email>johannes.schindelin@gmx.de</email>
-			<url>http://loci.wisc.edu/people/johannes-schindelin</url>
-			<organization>UW-Madison LOCI</organization>
-			<organizationUrl>http://loci.wisc.edu/</organizationUrl>
+			<id>samuel</id>
+			<name>Samuel Moll</name>
+			<email>samimoll@googlemail.com</email>
+			<url>http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:droplet_counter:start</url>
+			<!--<organization></organization>-->
+			<!--<organizationUrl></organizationUrl>-->
 			<roles>
 				<role>architect</role>
 				<role>developer</role>
 			</roles>
-			<timezone>-6</timezone>
+			<timezone>+1</timezone>
 		</developer>
 	</developers>
-
+	<contributors>
+		<contributor>
+			<name>Kota Miura</name>
+			<url>http://cmci.embl.de</url>
+			<properties><id>kota</id></properties>
+		</contributor>
+	</contributors>
 	<scm>
-		<connection>scm:git:git://github.com/imagej/minimal-ij1-plugin</connection>
-		<developerConnection>scm:git:git@github.com:imagej/minimal-ij1-plugin</developerConnection>
+		<connection>scm:git:git://github.com/ebmoll/lipid-droplet-counter</connection>
+		<developerConnection>scm:git:git@github.com:ebmoll/lipid-droplet-counter</developerConnection>
 		<tag>HEAD</tag>
-		<url>https://github.com/imagej/minimal-ij1-plugin</url>
+		<url>https://github.com/ebmoll/lipid-droplet-counter</url>
 	</scm>
 
 	<properties>
