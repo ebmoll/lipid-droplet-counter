@@ -1,4 +1,4 @@
-package droplet_finder;
+package ebmoll.lipid_droplet_counter.droplet_finder;
 import ij.*;
 import ij.process.*;
 import ij.plugin.*;
@@ -9,7 +9,7 @@ import java.awt.*;
 import ij.measure.*;
 
 import ij.gui.*;
-import ij_ImagePlusOverlay.*;
+import ebmoll.lipid_droplet_counter.ij_ImagePlusOverlay.*;
 /*
  * Author: Samuel Moll (moll@biochem.mpg.de)
  * released under GNU GPL version 3 or above

@@ -1,4 +1,4 @@
-package ij_ImagePlusOverlay;
+package ebmoll.lipid_droplet_counter.ij_ImagePlusOverlay;
 
 import ij.*;
 import ij.ImagePlus;

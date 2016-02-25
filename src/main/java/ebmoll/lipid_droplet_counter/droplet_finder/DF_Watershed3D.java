@@ -1,9 +1,9 @@
-package droplet_finder;
+package ebmoll.lipid_droplet_counter.droplet_finder;
 /*
  * Author: Samuel Moll (moll@biochem.mpg.de)
  * released under GNU GPL version 3 or above
  */
-import filters.Watershed3D;
+import ebmoll.lipid_droplet_counter.filters.Watershed3D;
 import ij.ImagePlus;
 import ij.Prefs;
 import ij.gui.GenericDialog;
