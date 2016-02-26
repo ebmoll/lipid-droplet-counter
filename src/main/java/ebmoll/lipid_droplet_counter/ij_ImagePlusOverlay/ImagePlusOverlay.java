@@ -1,4 +1,4 @@
-package ij_ImagePlusOverlay;
+package ebmoll.lipid_droplet_counter.ij_ImagePlusOverlay;
 
 import ij.*;
 import ij.ImagePlus;
@@ -96,7 +96,7 @@ public class ImagePlusOverlay extends ImagePlus {
 		// TODO Auto-generated constructor stub
 	}
 
-	public ImageOverlay getOverlay() {
+	public ImageOverlay getImageOverlay() {
 		return overlay;
 	}
 	public void setOverlay(ImageOverlay overlay) {
@@ -163,7 +163,7 @@ class ImageCanvasOverlay extends ImageCanvas {
 	}
 	
 	public void paint(Graphics g) {
-		ImageOverlay overlay = ((ImagePlusOverlay)imp).getOverlay();
+		ImageOverlay overlay = ((ImagePlusOverlay)imp).getImageOverlay();
 
 		super.paint(g);
 		try {

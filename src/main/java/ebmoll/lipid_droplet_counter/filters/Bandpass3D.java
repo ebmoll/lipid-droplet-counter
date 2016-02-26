@@ -1,4 +1,4 @@
-package filters;
+package ebmoll.lipid_droplet_counter.filters;
 
 import ij.IJ;
 //import ij.ImagePlus;

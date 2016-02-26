@@ -1,4 +1,4 @@
-package droplet_finder;
+package ebmoll.lipid_droplet_counter.droplet_finder;
 import ij.*;
 import ij.plugin.*;
 import ij.plugin.filter.PlugInFilter;

@@ -1,0 +1,84 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+		http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>net.imagej</groupId>
+		<artifactId>pom-imagej</artifactId>
+		<version>7.0.0</version>
+		<relativePath />
+	</parent>
+
+	<groupId>ebmoll.lipid_droplet_counter</groupId>
+	<artifactId>Droplet_Counter</artifactId>
+	<version>1.0.0</version>
+
+	<name>plugins/Droplet_Counter.jar</name>
+	<description>A Maven project implementing an ImageJ 1.x plugin</description>
+
+	<developers>
+		<developer>
+			<id>samuel</id>
+			<name>Samuel Moll</name>
+			<email>samimoll@googlemail.com</email>
+			<url>http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:droplet_counter:start</url>
+			<!--<organization></organization>-->
+			<!--<organizationUrl></organizationUrl>-->
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+			<timezone>+1</timezone>
+		</developer>
+	</developers>
+	<contributors>
+		<contributor>
+			<name>Kota Miura</name>
+			<url>http://cmci.embl.de</url>
+			<properties><id>kota</id></properties>
+		</contributor>
+	</contributors>
+	<scm>
+		<connection>scm:git:git://github.com/ebmoll/lipid-droplet-counter</connection>
+		<developerConnection>scm:git:git@github.com:ebmoll/lipid-droplet-counter</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/ebmoll/lipid-droplet-counter</url>
+	</scm>
+
+	<properties>
+		<main-class>Droplet_Counter</main-class>
+	</properties>
+	<repositories>
+		<!-- NB: for project parent -->
+		<repository>
+			<id>imagej.public</id>
+			<url>http://maven.imagej.net/content/groups/public</url>
+		</repository>
+	</repositories>
+	<dependencies>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>ij</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>${main-class}</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

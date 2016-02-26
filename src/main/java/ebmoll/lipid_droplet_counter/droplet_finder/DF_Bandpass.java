@@ -1,6 +1,6 @@
-package droplet_finder;
+package ebmoll.lipid_droplet_counter.droplet_finder;
 
-import filters.Bandpass3D;
+import ebmoll.lipid_droplet_counter.filters.Bandpass3D;
 import ij.IJ;
 import ij.ImagePlus;
 import ij.Prefs;

@@ -1,4 +1,4 @@
-package droplet_finder;
+package ebmoll.lipid_droplet_counter.droplet_finder;
 import ij.*;
 import ij.process.*;
 import ij.plugin.*;
@@ -9,7 +9,7 @@ import java.awt.*;
 import ij.measure.*;
 
 import ij.gui.*;
-import ij_ImagePlusOverlay.*;
+import ebmoll.lipid_droplet_counter.ij_ImagePlusOverlay.*;
 /*
  * Author: Samuel Moll (moll@biochem.mpg.de)
  * released under GNU GPL version 3 or above
@@ -108,7 +108,7 @@ public class DF_Segment_Analyzer implements PlugIn, DialogListener {
     	}
     	/*preview_image.getCanvas().setDisplayList(network.getParticleMarkers(sn-1),Color.red,new BasicStroke(1));
     	preview_image.repaintWindow();*/
-    	network.drawParticleMarkers(preview_image.getOverlay(),sn-1);
+    	network.drawParticleMarkers(preview_image.getImageOverlay(),sn-1);
     	previewrunning = false;
     	return true;
     }
