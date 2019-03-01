@@ -11,7 +11,7 @@ It also contains:
 
 **Usage:**
 
-Copy the file {{:plugin:analysis:droplet_counter:droplet_finder.jar|Droplet_Counter.jar}} into your Imagej plugins directory. The jar file also contains the GPL-licensed source code. You can open the jar file with any archive manager, e.g. 7zip.
+Copy the file [Droplet_Counter.jar](https://github.com/ebmoll/lipid-droplet-counter/releases/download/v1.0.0/droplet_finder.jar) into your Imagej plugins directory. The jar file also contains the GPL-licensed source code. You can open the jar file with any archive manager, e.g. 7zip.
 
 **Author:** Samuel Moll (samimoll@googlemail.com)
 
@@ -24,13 +24,13 @@ samimoll@googlemail.com
 
 ------------
 
-** What you need: **
+**What you need:**
   * any ImageJ version from 2008 or newer
   * the "Droplet_Finder.jar" file
 
 ------------
 
-** Quick Start: **
+**Quick Start:**
   * Copy all the needed files into your ImageJ/plugins folder
   * Start ImageJ, open your image stack, select "Droplet Finder/Filterstacker"
     * Enter the minimum and maximum feature sizes (size bounds in pixels for your droplets)
@@ -45,7 +45,7 @@ samimoll@googlemail.com
 
 ------------------------------------
 
-** What the Filterstacker actually does: **
+**What the Filterstacker actually does:**
 
 The "Filterstacker" plugin actually only does a 3D-bandpass on your stack. It will first
 3D-blur the input image with a filter size of "maximum feature size" and substract the
@@ -79,7 +79,16 @@ particles are green. If there is a green line through one of your particles, low
 "connect threshold".
 
 
-# FAQ
+
+## Citing lipid droplet counter in academic papers
+
+If you publish a paper relying on results obtained with ImageJ and this plugin, and want to add a citation to your paper, you could e.g. follow [these recommendations](https://peerj.com/articles/cs-86/) for citing.
+
+DOI for citing: [![DOI](https://zenodo.org/badge/52263175.svg)](https://zenodo.org/badge/latestdoi/52263175)
+
+
+
+## FAQ
 
   * **Q:** What are the units used for the measured volume and surface area?
   * **A:** The units are pixels cubed (=voxels) and pixels squared respectively. The surface area is estimated based on the assumption that your voxels have the same height, width and length. If this is not the case (Z/X aspect ratio != 1), the estimated surface area is wrong.
@@ -102,7 +111,7 @@ Then your pixels/voxels have the following dimensions:
   x: 10um / 512 = 19.5nm
   y: 10um / 512 = 19.5nm
   z: 2um / 30 = 66.7nm
-This means the z-resolution is considerably worse than the x- and y-resolutions. (This is very common with CLSM images)
+Normally, your imaging system gives you the width of a pixel (x and y values) and the stack step size (z value) directly. In our example the z-resolution is considerably worse than the x- and y-resolutions. (This is very common with CLSM images)
 **The z-ratio is then just z divided by x, i.e. 66.7nm/19.5nm = 3.4**. This is what should be put in the confusingly-named "Z/X aspect ratio" field.
 That said, you can experiment a bit with this setting (set it to higher/lower values than the theoretically calculated ones) to get optimal object separation.
 
